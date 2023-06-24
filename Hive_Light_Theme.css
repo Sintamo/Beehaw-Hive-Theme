@@ -1,0 +1,601 @@
+/* Beehaw Hive Light Theme v1.2, created by Sintamo */
+
+:root {
+--offblack: #1a1a1a;
+--offwhite: #f7f7f7;
+--urlblue: #037BFE;
+--mutedcolor: #6b7178;
+--yellowhighlight: #946C00;
+--honey: #FFC20E;
+--dividers: #e7e7e7;
+--stockhighlight: #e69066;
+--buttonpressed: #FFAE00;
+}
+
+/*----- User Settings -----*/
+
+/* Comment in/out to toggle */
+
+/* Disable User AND Community Icons
+div.col-12 ul.list-inline.mb-1.text-muted.small img.rounded-circle.img-icon.mr-2 {
+display: none;
+} */
+
+/* Use My Experimental Beehaw Icon
+a.d-flex.align-items-center.navbar-brand.mr-md-3.active img.rounded-circle.img-icon.mr-2 {
+  content: url("https://i.imgur.com/hIpMuJf.png")  !important;
+  object-fit: contain;
+} */
+
+/* Hide Language Badge */
+span.mx-1.badge {
+display: none;
+}
+
+/*Hide User Icons but Show Community Icons*/
+ul.list-inline.mb-1.text-muted.small li a picture {
+  display: none;
+}
+ul.list-inline.mb-1.text-muted.small span a picture {
+  display: inline-block;
+}
+
+/*---------End User Settings----------*/
+
+/* background color */
+body {
+background-color: var(--offwhite) !important;
+background-image: none !important;
+}
+
+/* low-attention text */
+.text-muted {
+color: var(--mutedcolor) !important;
+}
+
+/* Shift User and Community Icons */
+div.col-12 ul.list-inline.mb-1.text-muted.small img.rounded-circle.img-icon.mr-2, div.card-body img.rounded-circle.img-icon.mr-2 {
+  transform: translateY(-1.5px);
+}
+
+/* make # of comments black */
+span.mr-2 {
+  color: var(--offblack) !important;
+}
+
+/* navbar color */
+nav.navbar.navbar-expand-md.navbar-light.shadow-sm.p-0.px-3 {
+background: #F1F1F1;
+}
+
+/* not actually the primary text, it's the pinned icon */
+.text-primary {
+color: var(--yellowhighlight) !important;
+}
+
+/* community name color */
+span.overflow-wrap-anywhere {
+color: var(--yellowhighlight);
+}
+
+/* filter bar text color */
+label.btn.btn-outline-secondary.pointer.false {
+background: transparent;
+color: var(--offblack);
+}
+
+/* filter bar fill */
+label.pointer.btn.btn-outline-secondary.active {
+background-color: var(--honey);
+border-color: var(--honey);
+color: var(--offblack);
+}
+
+/* filter bar borders */
+label.btn.btn-outline-secondary.false.pointer {
+border-color: var(--honey);
+}
+label.btn.btn-outline-secondary.false.pointer:hover {
+background-color: var(--honey);
+}
+
+/* sidebar large button */
+div.card-body a.btn.btn-secondary.btn-block {
+margin-top: 10px;
+background-color: var(--honey);
+border-color: transparent;
+color: var(--offblack);
+}
+div.card-body a.btn.btn-secondary.btn-block:hover {
+background-color: var(--buttonpressed);
+}
+
+span.small.text-warning {
+color: var(--yellowhighlight);
+}
+
+/* pinned post icon */
+.text-secondary {
+color: var(--yellowhighlight)!important;
+}
+
+/* navbar spacing */
+a.nav-link {
+margin-left: 30px;
+}
+
+/* realign dropdown items */
+div.dropdown-content a.nav-link {
+margin-left: 5px;
+}
+
+/* add space between username and notifcations */
+button.nav-link.btn.btn-link.dropdown-toggle {
+margin-left: 20px;
+}
+
+/* align post action buttons to center-right */
+div.d-flex.justify-content-start.flex-wrap.text-muted.font-weight-bold.mb-1 {
+margin-top: 10px;
+margin-right: 10px;
+display: flex;
+justify-content: space-between;
+}
+
+/* show post buttons inside post */
+div.d-flex.justify-content-start.flex-wrap.text-muted.font-weight-bold.mb-1 svg.icon.icon-inline {
+  display: inline-block;
+  justify-content: space-between;
+}
+
+/* add space between comment button and post action buttons */
+button.btn.btn-link.text-muted.py-0.pl-0 {
+margin-right: 4vw;
+}
+
+/* align post thumbnails */
+div.col-sm-2.pr-0 {
+margin-top: 10px;
+position: relative;
+}
+
+/* post details */
+ul.list-inline.mb-1.text-muted.small {
+margin-right: 5px;
+}
+
+/* upvote spacing adjustment */
+div.vote-bar.col-1.pr-0.small.text-center {
+transform: translateY(20px);
+}
+
+/* post titles */
+div.d-inline-block {
+margin-right: 5px;
+}
+
+/* show expand button in post */
+div.post-title.overflow-hidden svg.icon.icon-inline {
+display: grid;
+}
+
+/* sidebar block border */
+div.card.border-secondary.mb-3 {
+border-color: var(--honey);
+background-color: var(--offwhite);
+}
+
+/* thread filler image */
+div.thumbnail.rounded.bg-light.d-flex.justify-content-center {
+background-color: var(--dividers);
+}
+
+/* notification badge */
+span.ml-1.badge.badge-light {
+background-color: var(--honey);
+color: var(--offblack);
+margin-left: 5px;
+}
+
+/* sidebar line items */
+li.list-inline-item, div.card-body li.list-inline-item.d-inline-block {
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
+/* post title */
+div.post-title.overflow-hidden {
+padding-right: 5px;
+padding-top: 5px;
+}
+
+/* next and previous buttons */
+button.btn.btn-secondary {
+color: var(--offblack);
+background-color: var(--honey);
+border-color: var(--honey);
+margin-right: 15px;
+}
+button.btn.btn-secondary:hover {
+background-color: var(--buttonpressed);
+}
+
+/* sidebar body text */
+div div h6, div.card-body {
+color: var(--mutedcolor);
+}
+
+h5.mb-0.d-inline {
+color: var(--offblack);
+}
+
+/* link colors in lots of spots */
+div.md-div ul li a, div.card-body ul li a, div p a {
+color: var(--yellowhighlight);
+}
+
+/* online users badges */
+li.list-inline-item.badge.badge-secondary {
+background-color: var(--honey);
+color: var(--offblack);
+}
+
+/* make admins list vertical */
+ul.mt-1.list-inline.small.mb-0 {
+display: grid;
+}
+
+/* make admin names blue again */
+ul.mt-1.list-inline.small.mb-0 li a span {
+color: #3579f6;
+}
+
+/* subcribed communities vertical */
+div.card-body ul.list-inline.mb-0 {
+display: grid;
+}
+
+/* show new comment text options */
+div.col-sm-12.d-flex.flex-wrap svg.icon.icon-inline {
+display: inline-block;
+}
+
+/* post comment button */
+button.btn.btn-sm.btn-secondary.mr-2 {
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+button.btn.btn-sm.btn-secondary.mr-2:hover {
+background-color: var(--buttonpressed);
+}
+
+/* below navbar container */
+div.mt-4.p-0.fl-1 {
+padding-top: 10px;
+}
+
+/* comment text top*/
+div.comments div.md-div {
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
+/* show comment actions */
+div.d-flex.flex-wrap.align-items-center.text-mxuted.small svg.icon.icon-inline {
+display: inline-block;
+}
+
+/* hide language on comment */
+div.d-flex.flex-wrap.align-items-center.text-muted.small span.badge.d-none.d-sm-inline.mr-2 {
+display: none;
+}
+
+/* shows upvote, replay, and comment buttons */
+div.comments svg.icon.icon-inline {
+ display: inline-block; 
+}
+
+/* divider color */
+div.details.comment-node.py-2.border-top.border-light {
+  border-color: var(--dividers);
+}
+
+/* comment username bar */
+div.comments div.d-flex.flex-wrap.align-items-center.text-muted.small {
+  margin-top: 5px;
+}
+
+/* mod list vertical */
+div.d-none.d-md-block.col-md-4 ul.list-inline.small {
+  display: grid;
+}
+
+/* mod names blue */
+div.d-none.d-md-block.col-md-4 li a span {
+  color: #3579f6;
+}
+
+/* joined box container */
+div.d-none.d-md-block.col-md-4 h5.mb-0 {
+  margin-right: -19px;
+}
+
+/* Joined Button */
+button.btn.btn-secondary.btn-sm.mr-2 {
+  /*spacer*/
+  border-radius: 35px;
+  height: 35px;
+  white-space: nowrap;
+  margin-top: -10px;
+  transform: translateY(10px);
+}
+
+/* joined checkmark */
+button.btn.btn-secondary.btn-sm.mr-2 svg.icon.icon-inline {
+ display: inline-block;
+ color: var(--offblack);
+ stroke-width: 1px;
+}
+
+/* fix Create a Post Button margins */
+div.d-none.d-md-block.col-md-4 div.card-body {
+padding-bottom: 10px;
+}
+a.btn.btn-secondary.btn-block.mb-2 {
+  margin-bottom: 10px;
+}
+a.btn.btn-secondary.btn-block.mb-2:hover {
+  background-color: var(--buttonpressed);
+}
+
+/* moves post expand and button and pin to the right */
+div div h5 {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5px;
+  /*spacer*/
+}
+
+/* pin position */
+small.unselectable.pointer.ml-2.text-muted.font-italic {
+  margin-right: 13px;
+}
+
+/* text post spacing */
+div.col-sm-12 {
+  margin-top: 10px;
+}
+
+/* new comment spacing */
+div.col-sm-12.d-flex.flex-wrap {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+/* link post preview */
+div.card.border-secondary.mt-3.mb-2 {
+  border-style: solid;
+  background-color: transparent;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: var(--honey);
+}
+
+/* test post body */
+div.col-12.card.my-2.p-2 {
+  border-style: solid;
+  background-color: transparent;
+  border-width: 1px;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  margin-top: 20px;
+  color: var(--offblack);
+}
+
+/* hide community icon in posts for consistency with community pages*/
+div.card-body div.position-relative.mb-2 {
+  display: none;
+}
+
+/* shift upvote comment */
+div.d-flex.justify-content-between.justify-content-lg-start.flex-wrap.text-muted.font-weight-bold {
+  margin-left: -6px;
+}
+
+/* type here to comment */
+textarea.form-control.false {
+padding-left: 15px;
+padding-top: 10px;
+color: var(--mutedcolor);
+}
+
+/* show entire Select Language title */
+select.lang-select-action.btn.btn-sm.text-muted {
+  width: 142px;
+}
+
+/* user profile buttons */
+a.d-flex.align-self-start.btn.btn-secondary.mr-2 {
+  background-color: var(--honey);
+  border-color: var(--honey);
+  color: var(--offblack);
+}
+a.d-flex.align-self-start.btn.btn-secondary.mr-2:hover {
+  background-color: var(--buttonpressed);
+}
+
+/* Create Post colors part 1 */
+div.choices__inner.bg-secondary.border-0.py-0.modlog-choices-font-size {
+  color: var(--offblack);
+  background-color:white;
+}
+
+/* Create Post colors part 2 */
+div.choices__item.bg-secondary.choices__item--selectable {
+  background-color: white;
+}
+
+/* block quotes with yellow indent */
+div div blockquote {
+  border-color: var(--yellowhighlight);
+}
+
+/* invert modlog colors */
+a.badge.badge-primary {
+background-color:var(--mutedcolor);
+color: var(--offwhite);
+}
+
+/* community sidebar buttons */
+button.btn.btn-secondary.btn-block {
+  margin-top: 10px;
+  border: none;
+}
+
+/* community sidebar buttons hover */
+button.btn.btn-secondary.btn-block:hover {
+  background-color: var(--buttonpressed);
+}
+
+div.card-body span.overflow-wrap-anywhere {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* post title hyperlinks and hover effect*/
+a.mr-2 {
+  color: var(--yellowhighlight);
+  max-width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+a.mr-2:hover {
+  color: var(--yellowhighlight);
+  max-width: 200px;
+  white-space: pre-wrap;
+}
+
+/* END OF GOOD STUFF */
+
+button.btn.btn-link.d-inline-block {
+  color: var(--yellowhighlight);
+}
+
+/* align rss and question mark button */
+main div div div.mb-3 svg.icon.icon-inline, main div div div.mb-3 svg.icon.text-muted.small {
+  transform: translateY(-2.5px);
+}
+div.col-12.col-md-8 div.mb-3 svg.icon.icon-inline, div.col-12.col-md-8 div.mb-3 svg.icon.text-muted.small {
+  transform: translateY(-2.5px);
+}
+
+/* logged out disabled buttons */
+label.btn.btn-outline-secondary.false.disabled {
+  color: black;
+  border-color: var(--honey);
+}
+
+div.col-12.card.my-2.p-2 div h3 a {
+  color: var(--yellowhighlight);
+}
+
+/* comment dividers */
+div div hr {
+  background-color: var(--dividers);
+}
+
+/* START OF TOMFOOLERY */
+
+/* comment text color
+div.col-12.col-md-8.mb-3 div div p {
+  color: white;
+}*/
+
+/* make more links the right blue */
+div.d-flex.flex-wrap.align-items-center.text-muted.small span a span {
+  color: var(--urlblue);
+}
+li a span {
+  color: var(--urlblue);
+}
+
+/* comment filter selected text */
+label.btn.btn-outline-secondary.pointer.active {
+  color: black;
+}
+
+/* post comment text */
+div button span {
+  color: black;
+}
+
+/* a.d-flex.align-items-center.navbar-brand.mr-md-3.active {
+  color: white;
+}*/
+
+/* li button span {
+  color: white;
+}*/
+
+/* a.text-body {
+  color: white;
+}*/
+
+/* dropdown
+select.custom-select.w-auto.mr-2.mb-2 {
+  color: white;
+}*/
+
+/* block user button test */
+button.d-flex.align-self-start.btn.btn-secondary.mr-2 {
+  color: black;
+}
+
+/* div.col-12.col-md-8 div div p {
+ color: white;
+}
+
+/* comment block with background */
+div.details.comment-node.py-2.border-top.border-light.mark {
+  background-color: #1a1a1a;
+}
+
+/* black text */
+div.col-12 button.btn.btn-secondary.mb-2 {
+  color: black;
+}
+
+/* add hover effect to filter buttons */
+label.pointer.btn.btn-outline-secondary.false:hover {
+  background-color: var(--honey);
+  color: black;
+}
+
+/* divider colors */
+hr.my-3 {
+  background-color:var(--dividers);
+}
+
+button.btn.btn-secondary.mb-2:hover {
+  background-color: var(--buttonpressed);
+}
+
+/* post url preview text
+div.card-text.small.text-muted.md-div {
+  color: white;
+}*/
+
+/* fix beehaw docs page
+article.markdown {
+  background-color: var(--offwhite);
+}*/
+
+img.img-fluid.banner.img-expanded.slight-radius {
+  border-radius: 10px;
+}
