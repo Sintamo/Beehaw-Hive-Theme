@@ -1,4 +1,4 @@
-/* Beehaw Hive Light Theme v1.2, created by Sintamo */
+/* Beehaw Hive Light Theme v1.2.1, created by Sintamo */
 
 :root {
 --offblack: #1a1a1a;
@@ -563,7 +563,7 @@ button.d-flex.align-self-start.btn.btn-secondary.mr-2 {
 
 /* comment block with background */
 div.details.comment-node.py-2.border-top.border-light.mark {
-  background-color: #1a1a1a;
+  background-color: var(--dividers);
 }
 
 /* black text */
