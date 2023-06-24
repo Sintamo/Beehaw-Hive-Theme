@@ -7,7 +7,7 @@ Available in both light and dark flavors, the Hive Theme intends to create an in
 Hive Light:
 ![](https://i.imgur.com/OlNvCQ3.png)
 
-![](https://i.imgur.com/QWegTJr.png)
+![](https://i.imgur.com/FHTV9HP.png)
 
 Hive Dark:
 ![](https://i.imgur.com/kp2YqKB.png)
